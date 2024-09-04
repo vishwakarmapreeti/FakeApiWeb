@@ -1,0 +1,5 @@
+.half-image {
+  height: 500px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures image covers the specified height */
+  object-position: top; /* Aligns the top of the image to show only the upper half */
+}

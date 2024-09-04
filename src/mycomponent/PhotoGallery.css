@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+
+#wrapper-div{
+    margin: auto;
+    width:80%;
+}
+
+img{
+    width: 150px;
+     height: 150px;
+     padding:5px;
+}

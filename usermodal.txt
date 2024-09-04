@@ -1,0 +1,53 @@
+{selectedUser && (
+        <Modal show={show1} onHide={handleClose1} animation={false}>
+          <Modal.Header closeButton>
+            <Modal.Title>post information</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            {/* Woohoo, you are reading this text in a modal! hello */}
+            <p>
+              {" "}
+              <strong>Name:</strong>
+              {selectedUser.name}
+            </p>
+            <p>
+              {" "}
+              <strong>UserName:</strong>
+              {selectedUser.username}
+            </p>
+            <p>
+              {" "}
+              <strong>Email:</strong>
+              {selectedUser.email}
+            </p>
+            <p>
+              {" "}
+              <strong>Address:</strong>
+              {selectedUser.address.street}
+            </p>
+            <p>
+              {" "}
+              <strong>City:</strong>
+              {selectedUser.address.city}
+            </p>
+            <p>
+              {" "}
+              <strong>phone no:</strong>
+              {selectedUser.phone}
+            </p>
+            <p>
+              {" "}
+              <strong>Website:</strong>
+              {selectedUser.website}
+            </p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose1}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose1}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      )}

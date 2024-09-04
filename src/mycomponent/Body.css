@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#main-div {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+#sidebar-div {
+  width: 30%;
+  min-height:100px;
+  /* background-color: lightgray; */
+  float: left;
+  /* text-align: center; */
+  line-height: 400px;
+}
+
+#body-area-div {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items:  center; */
+  width: 65%;
+  min-height: 100px;
+  background-color: lightgray;
+  float: right;
+  text-align: center;
+  line-height: 400px;
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sidebar-image{
+  width: 100%; /* Ensures image fits within sidebar width */
+  height: 100%; /* Ensures image fits within sidebar height */
+  object-fit: cover; /* Resizes the image to cover the entire div without stretching */
+  display: block; /*Removes bottom spacing for images*/
+  margin-top: 40px;
+
+}
+
+img{
+  float: left;
+  /* max-width:1000px; */
+}
+
+#wrapper-div {
+  width: 90%;
+
+  margin:auto;
+  margin-bottom:10%;
+}
+
+#body-area-div {
+  flex: 1; /* Body area takes up remaining space */
+  padding: 20px; /* Adds padding around text content */
+  background-color: #ffffff; /* Optional background color */
+  color: #333; /* Text color */
+  line-height: 1.6; /* Improves readability */
+}
+
+h1 {
+  margin-bottom: 15px; /* Adds space below the heading */
+}
+
+p {
+  margin-bottom: 10px; /* Adds space below each paragraph */
+}
